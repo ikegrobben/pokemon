@@ -1,0 +1,148 @@
+body {
+  background: url(https://assets.pokemon.com/static2/_ui/img/chrome/body_bg.png);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.pokemon-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.pokemon-card {
+  width: 337px;
+  background: white
+    url(https://assets.pokemon.com/static2/_ui/img/chrome/container_bg.png);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 20px 0px;
+  border-radius: 20px;
+}
+
+ul {
+  padding-left: 0;
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  justify-content: center;
+}
+
+li {
+  background: yellow;
+  border-radius: 8px;
+  width: fit-content;
+  padding: 3px 10px;
+}
+
+h1,
+h2,
+p,
+li {
+  text-align: center;
+}
+
+h2 {
+  color: #424242;
+  font-size: 32px;
+}
+
+.pokemon-card__sprite {
+  max-height: 150px;
+  width: 150px;
+  align-self: center;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 20px 0px;
+  border-bottom: 5px solid #2468b1;
+}
+
+nav::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  border: 3px solid #fccf00;
+}
+
+.logo {
+  width: 150px;
+  margin: 0px 100px;
+}
+
+button {
+  min-width: 100px;
+  background: #fccf00;
+  border: 2px solid #2468b1;
+  color: #2468b1;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+button:disabled,
+button[disabled] {
+  border: 2px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.ability {
+  background: #ececec;
+  border: 1px #7e7e7e solid;
+  color: #7e7e7e;
+}
+
+/* Types */
+.grass {
+  background-color: #d0ffd0;
+  border: 1px solid #0aeb0a;
+  color: #0aeb0a;
+}
+
+.fire {
+  background-color: #fdebd6;
+  border: 1px solid #f1a809;
+  color: #f1a809;
+}
+
+.water {
+  background-color: #d6e8fd;
+  border: 1px solid #095af1;
+  color: #095af1;
+}
+
+.electric {
+  background-color: #fbf1c0;
+  border: 1px solid #fccf00;
+  color: #fccf00;
+}
+
+.psychic {
+  background-color: #eac0fb;
+  border: 1px solid #b500fc;
+  color: #b500fc;
+}
+
+.others {
+  background-color: #fde8d6;
+  border: 1px solid #9c7b54;
+  color: #9c7b54;
+}
